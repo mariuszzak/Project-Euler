@@ -7,10 +7,7 @@
 # Find the largest palindrome made from the product of two 3-digit numbers.
 
 def is_palindromic?(num)
-  num = num.to_s
-  size = num.size
-  return true if num[0, size/2.floor] == num[-size/2.floor+(size.even? ? 0 : 1), size/2.floor].reverse
-  return false  
+  num.to_s == num.to_s.reverse
 end
 
 max = nil

@@ -12,13 +12,7 @@
 
 
 def is_palindromic?(num)
-  num = num.to_s
-  size = num.size
-  if num[0, size/2.floor] == num[-size/2.floor+(size.even? ? 0 : 1), size/2.floor].reverse
-    return true
-  else
-    return false  
-  end
+  num.to_s == num.to_s.reverse
 end
 
 palindromes = []

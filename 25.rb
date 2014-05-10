@@ -25,7 +25,7 @@
 
 
 last, penultimate, i = 1, 1, 3
-while true
+loop do
   x = last + penultimate
 
   if x.to_s.size >= 1000
