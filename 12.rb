@@ -62,7 +62,7 @@ end
 sum = 1
 max = 0
 i = 2
-while true
+loop do
   sum += i
   dividors = dividors(sum)
   max = dividors if max < dividors

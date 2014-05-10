@@ -5,7 +5,7 @@
 # divisible by all of the numbers from 1 to 20?
 
 i = 1
-while true
+loop do
   if (1..20).all? { |j| (i % j).zero? }
     puts i
     break

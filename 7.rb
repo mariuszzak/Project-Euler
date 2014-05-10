@@ -17,7 +17,7 @@ end
 def prime(num)
   primes = 1
   i = 3
-  while true
+  loop do
     primes +=1 if is_prime?(i)
     if primes == num
       return i 

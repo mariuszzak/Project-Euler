@@ -22,7 +22,7 @@ puts Benchmark.measure {
   size = 0
   product = 1
   wanted = [1,10,100,1_000,10_000,100_000,1_000_000]
-  while true
+  loop do
     i.to_s.split(//).each do |j|
       size += 1
       if wanted.first == size
